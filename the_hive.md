@@ -75,7 +75,7 @@ Install The Hive chosing binary package:
     cp /opt/thehive/conf/application.conf /etc/thehive/
     chown -R root:thehive /etc/thehive
     chmod 640 /etc/thehive/application.conf
-    cp /opt/thehive/conf/thehive.service /etc/systemd/system/
+    cp /opt/thehive/conf/thehive.service /usr/lib/systemd/system/
     
     mkdir /opt/thp/thehive/index
     mkdir -p /opt/thp/thehive/files
@@ -84,5 +84,5 @@ Install The Hive chosing binary package:
     unzip thehive-latest.zip
     mv thehive-5.0.15-1 thehive
   ```
-  
+  NB: you can find config file on this (section)[https://github.com/secfit/opensoc/tree/main/the_hive_conf]
   
