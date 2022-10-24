@@ -31,4 +31,4 @@ Start service
   ```
 Open cortex interface for initial configuration : `http://127.0.0.1:9001/index.html#!/maintenance`<br>
 the screen should be like this:
-<img src="images/ara_playbook_list.JPG">
+<img src="cortex_initial_setup.JPG">
