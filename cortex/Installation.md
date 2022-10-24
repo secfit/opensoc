@@ -5,6 +5,7 @@
     Installation / Configuration
 </div>
 
+NB : installation based on this tutorial https://github.com/TheHive-Project/CortexDocs/blob/master/installation/install-guide.md
 ## Installation
 Download RPM file from Thehive project repository:
   ```sh
@@ -51,3 +52,15 @@ Create Organization:
 
 Go into the last organization, and create new user : 
 <img src="cortex_create_user.JPG"> <br>
+
+### Add Analyzers
+Prerequirement <br>
+NB : we will install pip2 and pip3, because some analyzers require pip2, and some Analyzers require pip3.
+   ```sh
+  yum install -y python3 python3-devel python-pip python2.7-dev
+  pip3 install -U pip setuptools
+  cd /opt/cortex
+  git clone https://github.com/TheHive-Project/Cortex-Analyzers
+  cd /opt/cortex/
+  for I in $(find Cortex-Analyzers -name 'requirements.txt'); do sudo -H pip2 install -r $I; done && for I in $(find Cortex-Analyzers -name 'requirements.txt'); do sudo -H pip3.6 install -r $I || true; done && for I in $(find Cortex-Analyzers -name 'requirements.txt'); do sudo -H pip3 install -r $I || true; done
+  ```
