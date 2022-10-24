@@ -48,3 +48,6 @@ After creating account, you should directly invited to credential login prompt :
 
 Create Organization:
 <img src="cortex_organization.JPG"> <br>
+
+Go into the last organization, and create new user : 
+<img src="cortex_create_user.JPG"> <br>
