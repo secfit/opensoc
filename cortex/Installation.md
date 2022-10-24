@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <h3 align="center">Cortex</h3>
+  <h1 align="center">Cortex</h1>
   <p align="center">
     Installation / Configuration
 </div>
