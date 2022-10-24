@@ -34,3 +34,7 @@ the screen should be like this:
 <img src="cortex_initial_setup.JPG">
 
 Create Administrator account : 
+<img src="cortex_admin_account.JPG">
+
+After creating account, you should directly invited to credential login prompt : 
+<img src="cortex_login_prompt.JPG">
