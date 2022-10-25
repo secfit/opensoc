@@ -64,3 +64,8 @@ NB : we will install pip2 and pip3, because some analyzers require pip2, and som
   cd /opt/cortex/
   for I in $(find Cortex-Analyzers -name 'requirements.txt'); do sudo -H pip2 install -r $I; done && for I in $(find Cortex-Analyzers -name 'requirements.txt'); do sudo -H pip3.6 install -r $I || true; done && for I in $(find Cortex-Analyzers -name 'requirements.txt'); do sudo -H pip3 install -r $I || true; done
   ```
+
+Uncomment analyzer location on Cortex config /etc/cortex/application.conf, and save.
+   ```sh
+  urls = ["/opt/cortex/Cortex-Analyzers/analyzers"]
+  ```
