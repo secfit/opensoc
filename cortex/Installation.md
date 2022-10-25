@@ -75,4 +75,4 @@ Restart service
   systemctl restart cortex
   ```
 Now, you should find analyzer list like this : 
-<img src="analyser_list.JPG"> <br>
+<img src="analyser_list1.JPG"> <br>
