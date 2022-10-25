@@ -69,3 +69,9 @@ Uncomment analyzer location on Cortex config /etc/cortex/application.conf, and s
    ```sh
   urls = ["/opt/cortex/Cortex-Analyzers/analyzers"]
   ```
+  
+Restart service
+   ```sh
+  systemctl restart cortex
+  ```
+Now, you should find 
