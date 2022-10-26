@@ -77,7 +77,8 @@ Restart service
 Now, you should find analyzer list like this : 
 <img src="analyser_list1.JPG"> <br>
 
-Set the application secret:
+Set the application secret:<br>
+NB : please read http://playframework.com/documentation/latest/ApplicationSecret
    ```sh
 (cat << _EOF_
 # Secret key
