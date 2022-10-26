@@ -76,3 +76,15 @@ Restart service
   ```
 Now, you should find analyzer list like this : 
 <img src="analyser_list1.JPG"> <br>
+
+Set the application secret:
+   ```sh
+(cat << _EOF_
+# Secret key
+# ~~~~~
+# The secret key is used to secure cryptographics functions.
+# If you deploy your application to several instances be sure to use the same key!
+play.http.secret.key="$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 64 | head -n 1)"
+_EOF_
+) | tee -a /etc/cortex/application.conf
+  ```
