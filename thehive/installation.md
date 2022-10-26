@@ -85,5 +85,5 @@ Install The Hive chosing binary package:
     unzip thehive-latest.zip
     mv thehive-5.0.15-1 thehive
   ```
-  NB: you can find config file on this (section)[https://github.com/secfit/opensoc/tree/main/the_hive_conf]
+  NB: you can find config file on this [[section](https://github.com/secfit/opensoc/tree/main/thehive/conf)]
   
