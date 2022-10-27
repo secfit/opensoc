@@ -64,3 +64,12 @@ Go to `https://hive.tec-flow.com/administration/entities/analyzer-templates`, cl
 Drop the file downloaded.
 
 
+### Import MITRE ATT&CK library
+Download download the latest archive of the official MITRE ATT&CK patterns from : <br>
+https://raw.githubusercontent.com/mitre/cti/master/enterprise-attack/enterprise-attack.json?version=TheHive-5.0.15-1 <br>
+https://raw.githubusercontent.com/mitre/cti/master/mobile-attack/mobile-attack.json?version=TheHive-5.0.15-1 <br>
+
+Go to `https://hive.tec-flow.com/administration/entities/attack-patterns`, click on Import MITRE ATT&CK patterns
+<img src="mitre_template.JPG">
+Drop the file downloaded.
+
