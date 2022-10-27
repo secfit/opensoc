@@ -24,4 +24,28 @@ taking this random API key from Cortex : `pRoZdXoWskJiWT2S+45r/mWoa287Dodis` JSO
    ```sh
   curl -H 'Authorization: Bearer pRoZdXoWskJiWT2S+45r/mWoa287Dodis' http://192.168.1.15:9001/api/analyzer
   ```
-You should get JSON response contain configured analyzer information
+You should get JSON response contain configured analyzer information <br>
+NB : make sure tha the firewall rule opened on port 9001 <br>
+
+On /etc/thehive/application.conf add the following line : 
+   ```sh
+  ## CORTEX configuration
+# More information at https://github.com/TheHive-Project/TheHiveDocs/TheHive4/Administration/Connectors.md
+# Enable Cortex connector
+#play.modules.enabled += org.thp.thehive.connector.cortex.CortexModule # this for The Hive V4
+scalligraph.modules += org.thp.thehive.connector.cortex.CortexModule # this for The Hive V5
+ cortex {
+  servers: [
+    {
+      name: "CORTEXBAS"                # Cortex name
+      url: "http://192.168.1.15:9001" # URL of Cortex instance
+      auth {
+        type: "bearer"        
+        key: "pRoZdXoWskJiWT2S+45r/mWoa287Dodis"                 # Cortex API key
+      }
+      wsConfig {}                  # HTTP client configuration (SSL and proxy)
+    }
+  ]
+ }
+
+  ```
