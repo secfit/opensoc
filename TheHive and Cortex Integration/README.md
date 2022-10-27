@@ -37,7 +37,7 @@ scalligraph.modules += org.thp.thehive.connector.cortex.CortexModule # this for 
  cortex {
   servers: [
     {
-      name: "CORTEXBAS"                # Cortex name
+      name: "CORTEX"                # Cortex name
       url: "http://192.168.1.15:9001" # URL of Cortex instance
       auth {
         type: "bearer"        
@@ -47,5 +47,12 @@ scalligraph.modules += org.thp.thehive.connector.cortex.CortexModule # this for 
     }
   ]
  }
-
   ```
+### Restart The Hive server : 
+   ```sh
+  service thehive status
+  ```
+Now you should find cortex status on The Hive portal : 
+Click on User > About : 
+<img src="cortex_status.JPG">
+
