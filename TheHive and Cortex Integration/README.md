@@ -9,7 +9,7 @@ Cortex server : 192.168.1.15
 
 # Cortex side
 ### create API user
-<img src="cortex_initial_setup.JPG">
+<img src="cortex_create_user.JPG">
 
 #create API key
 <img src="cortex_create_apikey.JPG">
