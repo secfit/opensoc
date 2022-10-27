@@ -56,3 +56,11 @@ Now you should find cortex status on The Hive portal :
 Click on User > About : 
 <img src="cortex_status.JPG">
 
+### Import analyzer template
+Download Analyzer template from http://download.thehive-project.org/report-templates.zip?version=5.0.15-1 <br>
+
+Go to `https://hive.tec-flow.com/administration/entities/analyzer-templates`, click on Import template archive
+<img src="analyzer_template.JPG">
+Drop the file downloaded.
+
+
