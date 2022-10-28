@@ -3,9 +3,9 @@
   <h1 align="center">TheHive and Cortex Integration</h1>
 </div>
 
-Let consider the following scenarion : 
-The Hive server : 192.168.1.10  , Version : 5.0.15-1
-Cortex server : 192.168.1.15  , Version : 3.1.7-1
+Let consider the following scenarion : <br>
+The Hive server : 192.168.1.10  , Version : 5.0.15-1 <br>
+Cortex server : 192.168.1.15  , Version : 3.1.7-1 <br>
 
 ## Cortex side
 ### create API user
