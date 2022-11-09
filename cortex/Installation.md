@@ -13,7 +13,7 @@ Download RPM file from Thehive project repository:
   ```
 Install package
    ```sh
-  rpm --ivh cortex-3.1.7-1.noarch.rpm
+  rpm -ivh cortex-3.1.7-1.noarch.rpm
   ```
   
 Before start Cortex service, you should install Elasticsearch to store Cortex's data.
