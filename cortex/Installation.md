@@ -11,6 +11,10 @@ Download RPM file from Thehive project repository:
   ```sh
   wget --no-check-certificate https://rpm.thehive-project.org/release/noarch/cortex-3.1.7-1.noarch.rpm
   ```
+Install JAVA dependencies
+   ```sh
+  yum install java-1.8.0-openjdk-headless
+  ```
 Install package
    ```sh
   rpm -ivh cortex-3.1.7-1.noarch.rpm
