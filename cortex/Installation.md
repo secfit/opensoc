@@ -65,8 +65,8 @@ NB : we will install pip2 and pip3, because some analyzers require pip2, and som
   pip3 install -U pip setuptools
   cd /opt/cortex
   git clone https://github.com/TheHive-Project/Cortex-Analyzers
-  cat /opt/cortex/Cortex-Analyzers/analyzers/requirements.txt | sort | uniq | sed "s;\(.*\);pip2 install \1;g" | sh
-  cat /opt/cortex/Cortex-Analyzers/analyzers/requirements.txt | sort | uniq | sed "s;\(.*\);pip3.6 install \1;g" | sh
+  cat /opt/cortex/Cortex-Analyzers/analyzers/*/requirements.txt | sort | uniq | sed "s;\(.*\);pip2 install \1;g" | sh
+  cat /opt/cortex/Cortex-Analyzers/analyzers/*/requirements.txt | sort | uniq | sed "s;\(.*\);pip3.6 install \1;g" | sh
   ```
 
 Uncomment analyzer location on Cortex config /etc/cortex/application.conf, and save.
